@@ -205,21 +205,18 @@ eventos = [
 fig = go.Figure()
 
 # Área rellena
+fill_color = (
+    "rgba(79,195,247,0.10)" if "oficial" in modo
+    else ("rgba(255,179,71,0.10)" if "blue" in modo else "rgba(105,240,174,0.10)")
+)
 fig.add_trace(go.Scatter(
     x=dff["fecha"], y=dff[col_y],
     fill="tozeroy",
-    fillcolor=color_ln.replace(")", ", 0.12)").replace("rgb", "rgba").replace("#", "rgba(")
-              if "#" in color_ln else color_ln,
+    fillcolor=fill_color,
     line=dict(color=color_ln, width=0),
     showlegend=False, hoverinfo="skip",
     name="área",
 ))
-# Overwrite with simple fillcolor
-fig.update_traces(
-    selector=dict(name="área"),
-    fillcolor=f"rgba(79,195,247,0.10)" if "oficial" in modo
-              else ("rgba(255,179,71,0.10)" if "blue" in modo else "rgba(105,240,174,0.10)"),
-)
 
 # Línea principal
 fig.add_trace(go.Scatter(
