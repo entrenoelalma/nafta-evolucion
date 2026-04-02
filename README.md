@@ -2,7 +2,8 @@
 
 Aplicación interactiva que muestra la evolución del precio de la **nafta súper YPF** en la Ciudad de Buenos Aires entre **enero 2021 y marzo 2026**, con conversión a dólares (oficial y blue).
 
-🔗 **[Ver app en vivo](https://musitani-nafta-evolucion-nafta-historico.streamlit.app)**
+🔗 **[Ver app streamlit clouden vivo](https://nafta-evolucion-ig6gf5vaxbhvk797qeh7pu.streamlit.app/)**
+🔗 **[Ver app php en vivo](https://entrenoelalma.org/digitalers01/streamlit)**
 
 ---
 
